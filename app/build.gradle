@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: 'dependencies.gradle'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.chalengesport"
+        minSdkVersion configVersion.minSdk
+        targetSdkVersion configVersion.sdk
+        versionCode configVersion.code
+        versionName configVersion.name
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = compileVersion
+        targetCompatibility = compileVersion
+    }
+
+    kotlinOptions {
+        jvmTarget = compileVersion
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation supportDependencies.values()
+
+    implementation kotlinDependencies.values()
+    implementation googleDependencies.values()
+    implementation networkingDependencies.values()
+
+    implementation jetPackDependencies.values()
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt jetPackAnnotation.values()
+
+//    implementation facebookDependencies.values()
+
+    implementation mediaProcessingDependencies.glide
+//    implementation mediaProcessingDependencies.uCrop
+    kapt mediaProcessingDependencies.glideCompiler
+
+    testImplementation jUnit
+    androidTestImplementation testingDependencies.values()
+}

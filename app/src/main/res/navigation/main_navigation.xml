@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/allTeamListFragment">
+
+    <fragment
+        android:id="@+id/allTeamListFragment"
+        android:name="com.example.chalengesport.ui.fragment.ListAllTeamFragment"
+        android:label="List All Team"
+        tools:layout="@layout/fragment_list_all_team">
+
+        <action
+            android:id="@+id/actionListToDetail"
+            app:destination="@id/detailTeamFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailTeamFragment"
+        android:name="com.example.chalengesport.ui.fragment.DetailTeamFragment"
+        android:label="Detail Team"
+        tools:layout="@layout/fragment_detail_team">
+
+        <argument
+            android:name="idTeam"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/>
+
+    </fragment>
+
+</navigation>

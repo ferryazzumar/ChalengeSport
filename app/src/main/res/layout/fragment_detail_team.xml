@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.DetailTeamFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_twelve"
+        android:padding="@dimen/margin_twelve">
+
+        <TextView
+            android:id="@+id/tvTeamName"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Arsenal" />
+
+        <TextView
+            android:id="@+id/tvTeamDesc"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sixteen"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTeamName"
+            tools:text="blablbla" />
+
+        <ImageView
+            android:id="@+id/ivTeamBadge"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/margin_twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTeamDesc"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvCaptionBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivTeamBadge"
+            tools:text="Arsenal Team Badge" />
+
+        <TextView
+            android:id="@+id/tvStadiumTitle"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sixteen"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCaptionBadge"
+            tools:text="Stadium" />
+
+        <ImageView
+            android:id="@+id/ivStadium"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/margin_twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStadiumTitle"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvCaptionStadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivStadium"
+            tools:text="Arsenal Stadium" />
+
+        <TextView
+            android:id="@+id/tvStadiumDesc"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCaptionStadium"
+            tools:text="Stadium" />
+
+        <ImageView
+            android:id="@+id/ivTeamJersey"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/margin_twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStadiumDesc"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvCaptionJersey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivTeamJersey"
+            tools:text="Arsenal Team Badge" />
+
+        <TextView
+            android:id="@+id/tvTeamData"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_sixteen"
+            android:text="Team Data"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCaptionJersey" />
+
+        <TextView
+            android:id="@+id/tvDataTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:text="Sport     :"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTeamData" />
+
+        <TextView
+            android:id="@+id/tvDataSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintStart_toEndOf="@+id/tvDataTitle1"
+            app:layout_constraintTop_toBottomOf="@id/tvTeamData"
+            tools:text="Sport :" />
+
+        <TextView
+            android:id="@+id/tvDataTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:text="League    :"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDataTitle1" />
+
+        <TextView
+            android:id="@+id/tvDataLeague"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintStart_toEndOf="@+id/tvDataTitle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDataTitle1"
+            tools:text="Sport :" />
+
+        <TextView
+            android:id="@+id/tvDataTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:text="Stadium   :"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDataLeague" />
+
+        <TextView
+            android:id="@+id/tvDataStadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:layout_constraintStart_toEndOf="@+id/tvDataTitle3"
+            app:layout_constraintTop_toBottomOf="@id/tvDataLeague"
+            tools:text="Sport :" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

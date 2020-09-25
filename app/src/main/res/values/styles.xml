@@ -1,0 +1,54 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipStrokeColor">@color/colorPrimary</item>
+        <item name="checkedIconTint">@color/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">0dp</item>
+    </style>
+
+    <style name="CustomChipStyleAction" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipStrokeColor">@color/colorPrimary</item>
+        <item name="checkedIconTint">@color/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">0dp</item>
+    </style>
+
+    <style name="CustomChipStyleFilter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipStrokeColor">@color/colorPrimary</item>
+        <item name="checkedIconTint">@color/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">0dp</item>
+    </style>
+
+    <style name="CustomChipStyleEntry" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipStrokeColor">@color/colorPrimary</item>
+        <item name="checkedIconTint">@color/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">0dp</item>
+    </style>
+
+    <style name="CustomChipStyleChoice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipStrokeColor">@color/colorPrimary</item>
+        <item name="checkedIconTint">@color/colorPrimary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">0dp</item>
+    </style>
+
+    <style name="CustomChipTextStyle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+</resources>

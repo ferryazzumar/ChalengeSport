@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="requestOptionCircleRadius">200dp</dimen>
+    <dimen name="requestOptionRoundRadius">4dp</dimen>
+
+    <dimen name="margin_zero">0dp</dimen>
+    <dimen name="margin_three">3dp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_twelve">12dp</dimen>
+    <dimen name="margin_sixteen">16dp</dimen>
+    <dimen name="margin_twenty_four">24dp</dimen>
+
+</resources>
